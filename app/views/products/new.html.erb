@@ -1,1 +1,12 @@
-
+<h1>New Product</h1>
+<%= form_for @product do |t| %>
+  <label>Name: </label>
+  <%= t.text_field :name  %><br>
+  <label>Description: </label>
+  <%= t.text_area :description %><br>
+  <label>Price: </label>
+  <%= t.number_field :price %><br>
+  <label>Inventory: </label>
+  <%= t.number_field :inventory %><br>
+  <%= t.submit %>
+<% end %>
